@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+  color: white;
+  height: max-content;
+  background: #E63E6D;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 8px 3px #a3f1e0;
+  padding: 0.5rem 1rem;
+}
+.navbar h2{
+  padding: 1rem 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar_list{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+.navbar_list div{
+
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+.navbar_list div:hover{
+  transform: scale(1.1);
+}
+.link{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.para{
+  width: 50%;
+  margin: 3rem auto;
+  line-height: 25px;
+  font-size: 1rem;
+  text-align: left;
+}
+.item_mainDiv{
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.items{
+  display: flex;
+  margin: 1rem auto;
+  width: 150px;
+  padding: 0.2rem 0.3rem;
+  height: 150px;
+  text-align: center;
+  box-shadow: 2px 2px 8px 3px grey;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items:hover{
+   transform: scale(0.85);
+}
+
+.items .link{
+  color: black;
 }
