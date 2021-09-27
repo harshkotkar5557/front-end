@@ -78,3 +78,63 @@ body{
 .items .link{
   color: black;
 }
+
+.form_container form{
+  display: flex;
+    margin: 1rem auto;
+    width: 60%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form_container form select,
+.form_container form input{
+  padding: 0.5rem;
+  margin: 1rem;
+  height: 2rem;
+  width: 60%;
+}
+.form_container form button{
+  margin: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  border-radius: 5px
+}
+.form_container form button:hover{
+  transform: scale(1.1);
+}
+.itemsX{
+  box-shadow: 0px 0px 3px 2px grey;
+    padding: 0.5rem 1rem;
+    width: 40%;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    position: relative;
+}
+.item_icon{
+  display: inline-block;
+  float: right;
+  margin: 0 0.5rem;
+  transform: scale(0.9);
+}
+.delete{
+  color: red;
+}
+.item_icon:hover{
+  transform: scale(1.1);
+}
+.btn_submit{
+  padding: 0.3rem 1rem;
+  margin: 1rem;
+  width: 20% !important;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
