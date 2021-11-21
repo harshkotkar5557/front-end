@@ -9,6 +9,10 @@
 body{
   font-family: 'Ubuntu', sans-serif;
 }
+
+button{
+  cursor: pointer;
+}
 .navbar{
   color: white;
   height: max-content;
@@ -137,4 +141,129 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+.card_outer_div{
+  width: 70%;
+  display: flex;
+  margin: 1.5rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card_outer_div .card{
+  display: flex;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px darkgrey;
+  width: 25%;
+  min-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0.8rem;
+}
+.stock_form{
+    margin: 1.5rem auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.stock_form select {
+  width: 25%;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 150px;
+  margin: 0.5rem;
+}
+
+.stock_form input{
+  width: 20%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    min-width: 120px;
+    margin: 0.5rem;
+}
+.stock_form button {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: black;
+  font-weight: 600;
+  margin: 0.5rem;
+  max-width: 120px;
+}
+.customer_outer{
+  margin-top: 2%;
+    margin-left: 5%;
+}
+.modalBtn{
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0.5rem auto;
+  border: none;
+  outline: none;
+  background: gray;
+  color: white;
+  font-weight: 600;
+}
+
+.overlay{
+  background: black;
+  opacity: 0.5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.customerForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: white;
+  position: absolute;
+  width: 40%;
+  padding: 2em 3rem;
+  margin: auto;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(0);
+}
+
+
+.customerForm p{
+  cursor: pointer;
+  margin-left: 101%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -3%;
+}
+.customerForm input{
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    outline: none;
+    width: 60%;
+}
+.customerForm button{
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0.5rem auto;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  font-weight: 600;
 }
